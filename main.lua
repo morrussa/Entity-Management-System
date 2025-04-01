@@ -12,6 +12,7 @@ function love.load()
 
     entity_m.set_current_canvas(2)
     entity_m.addEntity(-32,32,{"test","Loop"},1,1,0,"osagechan")
+    entity_m.addEntity(100,100,"roadblock",5,5,45,"roadblock")
     osagechanid = tag2id("osagechan")
 end
 
