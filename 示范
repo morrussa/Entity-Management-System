@@ -1,0 +1,23 @@
+-- 将普通实体转为九宫格
+M.updateEntity(123, {
+    resource = {"window_frame", 5, 10, 5, 10},
+    scaleX = 300,  -- 绝对宽度
+    scaleY = 200   -- 绝对高度
+})
+
+-- 仅更新动画标签
+M.updateEntity(456, {
+    resource = {nil, "attack"}  -- 保留原动画，只改标签
+})
+
+-- 更改九宫格尺寸
+M.updateEntity(123, {
+    scaleX = 350,
+    scaleY = 250
+})
+
+-- 切换为普通图片
+M.updateEntity(123, {
+    resource = "background",
+    isDraw = false
+})
